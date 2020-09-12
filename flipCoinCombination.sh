@@ -17,10 +17,10 @@ echo "Tail="${dict[T]}
      tailPer=$(( ${dict[T]}*100/n ))
      if [ $headPer -gt $tailPer ]
 then
-     echo "Head percentage $headPer is maximum"
+     echo "Head perc % $headPer is maximum"
      elif [ $tailPer  -gt $headPer ]
 then
-     echo "Tail percentage $tailPer is maximum"
+     echo "Tail perc % $tailPer is maximum"
      else
      echo "Both are equal"
 fi
@@ -196,7 +196,6 @@ if [[ $tttPer -ge $hhhPer && $tttPer -ge $thhPer && $tttPer -ge $thtPer && $tttP
          fi
 
 }
-
 read -p "Number of times loop to execute:" n
 echo "Enter 1 for singlet"
 echo "Enter 2 for doublet"
@@ -206,7 +205,7 @@ read -p "Enter number for operation::" num
             1) singlet  ;;
             2) doublet  ;;
             3) triplet  ;;
-*)
+            *)
                 exit ;;
     esac
 
